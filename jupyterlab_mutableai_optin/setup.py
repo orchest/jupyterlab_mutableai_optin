@@ -1,5 +1,5 @@
 """
-mutableai_optin setup
+jupyterlab_mutableai_optin setup
 """
 import json
 import sys
@@ -10,7 +10,7 @@ import setuptools
 HERE = Path(__file__).parent.resolve()
 
 # The name of the project
-name = "mutableai_optin"
+name = "jupyterlab_mutableai_optin"
 
 lab_path = (HERE / name.replace("-", "_") / "labextension")
 
@@ -20,7 +20,7 @@ ensured_targets = [
     str(lab_path / "static/style.js")
 ]
 
-labext_name = "mutableai_optin"
+labext_name = "jupyterlab_mutableai_optin"
 
 data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, str(lab_path.relative_to(HERE)), "**"),

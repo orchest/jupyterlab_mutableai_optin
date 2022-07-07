@@ -6,8 +6,8 @@ build-backend = "jupyter_packaging.build_api"
 file="LICENSE"
 
 [tool.jupyter-packaging.options]
-skip-if-exists = ["mutableai_optin/labextension/static/style.js"]
-ensured-targets = ["mutableai_optin/labextension/static/style.js", "mutableai_optin/labextension/package.json"]
+skip-if-exists = ["jupyterlab_mutableai_optin/labextension/static/style.js"]
+ensured-targets = ["jupyterlab_mutableai_optin/labextension/static/style.js", "jupyterlab_mutableai_optin/labextension/package.json"]
 
 [tool.jupyter-packaging.builder]
 factory = "jupyter_packaging.npm_builder"
@@ -17,4 +17,4 @@ build_cmd = "build:prod"
 npm = ["jlpm"]
 
 [tool.check-manifest]
-ignore = ["mutableai_optin/labextension/**", "yarn.lock", ".*", "package-lock.json"]
+ignore = ["jupyterlab_mutableai_optin/labextension/**", "yarn.lock", ".*", "package-lock.json"]

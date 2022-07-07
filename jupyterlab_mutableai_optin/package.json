@@ -1,5 +1,5 @@
 {
-  "name": "mutableai_optin",
+  "name": "jupyterlab_mutableai_optin",
   "version": "0.1.0",
   "description": "A JupyterLab extension to opt in to using MutableAI",
   "keywords": [
@@ -7,9 +7,9 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/orchest/mutableai_optin",
+  "homepage": "https://github.com/orchest/jupyterlab_mutableai_optin",
   "bugs": {
-    "url": "https://github.com/orchest/mutableai_optin/issues"
+    "url": "https://github.com/orchest/jupyterlab_mutableai_optin/issues"
   },
   "license": "BSD-3-Clause",
   "author": {
@@ -24,14 +24,14 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/orchest/mutableai_optin.git"
+    "url": "https://github.com/orchest/jupyterlab_mutableai_optin.git"
   },
   "scripts": {
     "build": "jlpm run build:labextension:dev",
     "build:prod": "jlpm run build:labextension",
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
-    "clean:labextension": "rimraf mutableai_optin/labextension",
+    "clean:labextension": "rimraf jupyterlab_mutableai_optin/labextension",
     "clean:all": "jlpm run clean:labextension",
     "install:extension": "jupyter labextension develop --overwrite .",
     "prepare": "jlpm run build:prod",
@@ -55,7 +55,13 @@
   "styleModule": "style/index.js",
   "jupyterlab": {
     "extension": true,
-    "outputDir": "mutableai_optin/labextension"
+    "outputDir": "jupyterlab_mutableai_optin/labextension",
+    "sharedPackages": {
+      "jupyterlab_mutableai" : {
+        "bundled": false,
+        "singleton": true
+      }
+    }
   },
   "jupyter-releaser": {
     "hooks": {

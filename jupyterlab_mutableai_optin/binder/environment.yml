@@ -1,10 +1,10 @@
-# a mybinder.org-ready environment for demoing mutableai_optin
+# a mybinder.org-ready environment for demoing jupyterlab_mutableai_optin
 # this environment may also be used locally on Linux/MacOS/Windows, e.g.
 #
 #   conda env update --file binder/environment.yml
-#   conda activate mutableai_optin-demo
+#   conda activate jupyterlab_mutableai_optin-demo
 #
-name: mutableai_optin-demo
+name: jupyterlab_mutableai_optin-demo
 
 channels:
   - conda-forge

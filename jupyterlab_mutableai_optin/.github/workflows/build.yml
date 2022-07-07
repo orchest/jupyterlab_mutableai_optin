@@ -19,5 +19,5 @@ jobs:
       run: |
         jlpm
         python -m pip install .
-        jupyter labextension list 2>&1 | grep -ie "mutableai_optin.*OK"
+        jupyter labextension list 2>&1 | grep -ie "jupyterlab_mutableai_optin.*OK"
         python -m jupyterlab.browser_check

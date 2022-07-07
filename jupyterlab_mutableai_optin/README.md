@@ -1,6 +1,6 @@
-# mutableai_optin
+# jupyterlab_mutableai_optin
 
-![Github Actions Status](https://github.com/orchest/mutableai_optin/workflows/Build/badge.svg)
+![Github Actions Status](https://github.com/orchest/jupyterlab_mutableai_optin/workflows/Build/badge.svg)
 
 A JupyterLab extension to opt in to using MutableAI
 
@@ -11,7 +11,7 @@ A JupyterLab extension to opt in to using MutableAI
 ## Install
 
 ```bash
-pip install mutableai_optin
+pip install jupyterlab_mutableai_optin
 ```
 
 ## Contributing
@@ -26,7 +26,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the mutableai_optin directory
+# Change directory to the jupyterlab_mutableai_optin directory
 # Install package in development mode
 pip install -e .
 # Link your development version of the extension with JupyterLab
@@ -55,5 +55,5 @@ jupyter lab build --minimize=False
 ### Uninstall
 
 ```bash
-pip uninstall mutableai_optin
+pip uninstall jupyterlab_mutableai_optin
 ```
